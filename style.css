@@ -24,3 +24,12 @@
   width: 90%;
   text-align: center;
 }
+
+#calculator table button[data-op] {
+  height: 50px;
+  width: 85px;
+  border: none;
+  color: white;
+  font-size: large;
+  background-color: darkorange;
+}
