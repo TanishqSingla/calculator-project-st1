@@ -11,7 +11,11 @@
   height: 20%;
   width: 90%;
   margin: 1rem auto;
-  font-size: 34px;
+  text-align: right;
+}
+#output {
+  font-size: 50px;
+  margin-top: 1rem;
 }
 
 #calculator table {

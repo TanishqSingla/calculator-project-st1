@@ -9,7 +9,9 @@
   </head>
   <body>
     <div id="calculator">
-      <div id="screen"></div>
+      <div id="screen">
+        <div id="output">1</div>
+      </div>
       <table>
         <tr>
           <td><button data-op="+">+</button></td>
@@ -36,7 +38,7 @@
         <tr>
           <td><button data-num="0">0</button></td>
           <td><button onclick="addDecimal()">.</button></td>
-          <td><button onclick="clearscreen()"></button></td>
+          <td><button onclick="clearscreen()">C</button></td>
         </tr>
       </table>
     </div>
