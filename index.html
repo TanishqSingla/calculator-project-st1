@@ -12,28 +12,35 @@
       <div id="screen"></div>
       <table>
         <tr>
-          <td><button>+</button></td>
-          <td><button>-</button></td>
-          <td><button>x</button></td>
-          <td><button>&div;</button></td>
+          <td><button data-op="+">+</button></td>
+          <td><button data-op="-">-</button></td>
+          <td><button data-op="x">x</button></td>
+          <td><button data-op="&div;">&div;</button></td>
         </tr>
         <tr>
-          <td><button>7</button></td>
-          <td><button>8</button></td>
-          <td><button>9</button></td>
-          <td rowspan="4"><button>=</button></td>
+          <td><button data-num="7">7</button></td>
+          <td><button data-num="8">8</button></td>
+          <td><button data-num="9">9</button></td>
+          <td rowspan="4" onclick="evaluate()"><button>=</button></td>
         </tr>
         <tr>
-          <td><button>4</button></td>
-          <td><button>5</button></td>
-          <td><button>6</button></td>
+          <td><button data-num="4">4</button></td>
+          <td><button data-num="5">5</button></td>
+          <td><button data-num="6">6</button></td>
         </tr>
         <tr>
-          <td><button>1</button></td>
-          <td><button>2</button></td>
-          <td><button>3</button></td>
+          <td><button data-num="1">1</button></td>
+          <td><button data-num="2">2</button></td>
+          <td><button data-num="3">3</button></td>
+        </tr>
+        <tr>
+          <td><button data-num="0">0</button></td>
+          <td><button onclick="addDecimal()">.</button></td>
+          <td><button onclick="clearscreen()"></button></td>
         </tr>
       </table>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

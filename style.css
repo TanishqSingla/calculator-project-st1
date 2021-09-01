@@ -11,4 +11,12 @@
   height: 20%;
   width: 90%;
   margin: 1rem auto;
+  font-size: 34px;
+}
+
+#calculator table {
+  border: solid 1px black;
+  margin: auto;
+  width: 90%;
+  text-align: center;
 }
