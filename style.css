@@ -12,10 +12,13 @@
   width: 90%;
   margin: 1rem auto;
   text-align: right;
+  display: block;
+  overflow: hidden;
 }
 #output {
   font-size: 50px;
   margin-top: 1rem;
+  overflow: hidden;
 }
 
 #calculator table {
