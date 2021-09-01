@@ -4,10 +4,25 @@ let expression = screenOutput.innerHTML;
 
 function clearscreen() {
     expression = "";
-    screenOutput = expression;
+    screenOutput.innerHTML = expression;
+}
+
+function correctExpression(str) {
+    let newstr = "";
+    for(let i = 0; i < str.length; i++) {
+        if(str[i] == "x") {
+            newstr += "*";
+        } else if(str[i] == "÷") {
+            newstr += "/"
+        } else {
+            newstr += str[i]
+        }
+    }
+    return newstr;
 }
 
 function calculate() {
-    let result = eval(expression);
+    let correctedExpression = correctExpression(expression);
+    let result = eval(correctExpression);
     screenOutput.innerHTML = result;
 }
