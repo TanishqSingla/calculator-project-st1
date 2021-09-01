@@ -23,6 +23,9 @@ function clearscreen() {
 }
 function correctExpression(str) {
     var newstr = "";
+    if (str == "") {
+        return "0";
+    }
     for (var i = 0; i < str.length; i++) {
         if (str[i] == "x") {
             newstr += "*";
@@ -35,6 +38,10 @@ function correctExpression(str) {
         }
     }
     return newstr;
+}
+function addDecimal() {
+    expression += ".";
+    screenOutput.innerHTML = expression;
 }
 function calculate() {
     var correctedExpression = correctExpression(expression);

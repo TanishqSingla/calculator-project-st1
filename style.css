@@ -1,6 +1,6 @@
 #calculator {
   border: solid 1px black;
-  width: 40%;
+  width: 25%;
   height: 500px;
   margin: auto;
   position: relative;
@@ -25,9 +25,15 @@
   border: solid 1px black;
   margin: auto;
   width: 90%;
+  height: 70%;
   text-align: center;
 }
 
+#calculator table button {
+  height: 50px;
+  width: 85px;
+  border: none;
+}
 #calculator table button[data-op] {
   height: 50px;
   width: 85px;
@@ -35,4 +41,7 @@
   color: white;
   font-size: large;
   background-color: darkorange;
+}
+#calculate-button {
+  height: 270px !important;
 }
